@@ -1,0 +1,78 @@
+apiVersion: v1
+entries:
+  logging-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-11-20T16:21:39.443281932Z"
+    description: A Helm chart for Kubernetes
+    digest: 21f241b677cccfdf731795808182dc930277f5086c208abcd3aef1784f3331f5
+    name: logging-operator
+    type: application
+    urls:
+    - https://qadzsi.github.io/helmrepo/charts/logging-operator-0.1.6.tgz
+    version: 0.1.6
+  nginx:
+  - annotations:
+      category: Infrastructure
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 1.24.0
+    created: "2024-11-20T16:21:39.449616817Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: NGINX Open Source is a web server that can be also used as a reverse proxy, load balancer, and HTTP cache. Recommended for high-demanding sites due to its ability to provide faster content.
+    digest: 0818b75795e6bf84abc56372742f6f7855f7e8820996082107bb88d5b046a99e
+    home: https://github.com/bitnami/charts/tree/main/bitnami/nginx
+    icon: https://bitnami.com/assets/stacks/nginx/img/nginx-stack-220x234.png
+    keywords:
+    - nginx
+    - http
+    - web
+    - www
+    - reverse proxy
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: nginx
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/nginx
+    - https://www.nginx.org
+    urls:
+    - https://qadzsi.github.io/helmrepo/charts/nginx-14.0.0.tgz
+    version: 14.0.0
+  nutss-management-backend-worker:
+  - apiVersion: v2
+    appVersion: 0.43.1-dev-18434972
+    created: "2024-11-20T16:21:39.451641051Z"
+    description: A Helm chart for Kubernetes
+    digest: 4b965dccdeee460e69d29b9e66561f292d41c001bea21e430fe6fce447e0a1ca
+    name: nutss-management-backend-worker
+    type: application
+    urls:
+    - https://qadzsi.github.io/helmrepo/charts/nutss-management-backend-worker-0.43.1-dev-18434972.tgz
+    version: 0.43.1-dev-18434972
+  ping:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-11-20T16:21:39.452519863Z"
+    description: A Helm chart for RIFT.ware ping with dhcp
+    digest: 453bb829aabd3c30bb4a3e743b349bb78179293a63fa161a058ccf1706110e61
+    name: ping
+    urls:
+    - https://qadzsi.github.io/helmrepo/charts/ping-0.3.0.tgz
+    version: 0.3.0
+  pong:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-11-20T16:21:39.453683174Z"
+    description: A Helm chart for RIFT.ware pong
+    digest: a3d3940d277cc47b15aaf00b6acf063505000c6859528551e7a83d2735915242
+    name: pong
+    urls:
+    - https://qadzsi.github.io/helmrepo/charts/pong-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-11-20T16:21:39.442517748Z"
