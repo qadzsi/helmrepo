@@ -1,5 +1,0 @@
-apiVersion: v2
-appVersion: "1.0"
-description: A Helm chart for RIFT.ware ping with dhcp
-name: ping
-version: 0.3.0
