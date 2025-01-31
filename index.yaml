@@ -3,13 +3,13 @@ entries:
   logging-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-11-20T16:21:39.443281932Z"
+    created: "2025-01-31T09:36:24.720400063Z"
     description: A Helm chart for Kubernetes
-    digest: 21f241b677cccfdf731795808182dc930277f5086c208abcd3aef1784f3331f5
+    digest: 0432a9baba9840eae59ec6a693ba754254884f0b2de17175e1e9191a1667d95a
     name: logging-operator
     type: application
     urls:
-    - https://qadzsi.github.io/helmrepo/charts/logging-operator-0.1.6.tgz
+    - https://github.com/qadzsi/helmrepo.git/charts/logging-operator-0.1.6.tgz
     version: 0.1.6
   nginx:
   - annotations:
@@ -17,7 +17,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.24.0
-    created: "2024-11-20T16:21:39.449616817Z"
+    created: "2025-01-31T09:36:24.728283466Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -42,37 +42,47 @@ entries:
     - https://github.com/bitnami/containers/tree/main/bitnami/nginx
     - https://www.nginx.org
     urls:
-    - https://qadzsi.github.io/helmrepo/charts/nginx-14.0.0.tgz
+    - https://github.com/qadzsi/helmrepo.git/charts/nginx-14.0.0.tgz
     version: 14.0.0
   nutss-management-backend-worker:
   - apiVersion: v2
     appVersion: 0.43.1-dev-18434972
-    created: "2024-11-20T16:21:39.451641051Z"
+    created: "2025-01-31T09:36:24.73005167Z"
     description: A Helm chart for Kubernetes
     digest: 4b965dccdeee460e69d29b9e66561f292d41c001bea21e430fe6fce447e0a1ca
     name: nutss-management-backend-worker
     type: application
     urls:
-    - https://qadzsi.github.io/helmrepo/charts/nutss-management-backend-worker-0.43.1-dev-18434972.tgz
+    - https://github.com/qadzsi/helmrepo.git/charts/nutss-management-backend-worker-0.43.1-dev-18434972.tgz
     version: 0.43.1-dev-18434972
   ping:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-11-20T16:21:39.452519863Z"
+    created: "2025-01-31T09:36:24.731114512Z"
     description: A Helm chart for RIFT.ware ping with dhcp
     digest: 453bb829aabd3c30bb4a3e743b349bb78179293a63fa161a058ccf1706110e61
     name: ping
     urls:
-    - https://qadzsi.github.io/helmrepo/charts/ping-0.3.0.tgz
+    - https://github.com/qadzsi/helmrepo.git/charts/ping-0.3.0.tgz
     version: 0.3.0
   pong:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2024-11-20T16:21:39.453683174Z"
+    created: "2025-01-31T09:36:24.731952343Z"
     description: A Helm chart for RIFT.ware pong
     digest: a3d3940d277cc47b15aaf00b6acf063505000c6859528551e7a83d2735915242
     name: pong
     urls:
-    - https://qadzsi.github.io/helmrepo/charts/pong-0.2.0.tgz
+    - https://github.com/qadzsi/helmrepo.git/charts/pong-0.2.0.tgz
     version: 0.2.0
-generated: "2024-11-20T16:21:39.442517748Z"
+  ponginternal:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2025-01-31T09:36:24.732824151Z"
+    description: A Helm chart for RIFT.ware pong with netattach defn
+    digest: 91dadb79d8e443001987ba7088b0e5546f5bf14af8e6823b59e7f8b66135d423
+    name: ponginternal
+    urls:
+    - https://github.com/qadzsi/helmrepo.git/charts/ponginternal-0.21.0.tgz
+    version: 0.21.0
+generated: "2025-01-31T09:36:24.719638573Z"
