@@ -3,7 +3,7 @@ entries:
   logging-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-31T05:57:49.712893986Z"
+    created: "2025-01-31T07:16:40.399811005Z"
     description: A Helm chart for Kubernetes
     digest: 0432a9baba9840eae59ec6a693ba754254884f0b2de17175e1e9191a1667d95a
     name: logging-operator
@@ -17,7 +17,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 1.24.0
-    created: "2025-01-31T05:57:49.729825312Z"
+    created: "2025-01-31T07:16:40.404667096Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -47,7 +47,7 @@ entries:
   nutss-management-backend-worker:
   - apiVersion: v2
     appVersion: 0.43.1-dev-18434972
-    created: "2025-01-31T05:57:49.733427752Z"
+    created: "2025-01-31T07:16:40.407468135Z"
     description: A Helm chart for Kubernetes
     digest: 4b965dccdeee460e69d29b9e66561f292d41c001bea21e430fe6fce447e0a1ca
     name: nutss-management-backend-worker
@@ -58,7 +58,7 @@ entries:
   ping:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-01-31T05:57:49.734721924Z"
+    created: "2025-01-31T07:16:40.408400238Z"
     description: A Helm chart for RIFT.ware ping with dhcp
     digest: 453bb829aabd3c30bb4a3e743b349bb78179293a63fa161a058ccf1706110e61
     name: ping
@@ -68,20 +68,11 @@ entries:
   pong:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2025-01-31T05:57:49.735743214Z"
+    created: "2025-01-31T07:16:40.409188925Z"
     description: A Helm chart for RIFT.ware pong
     digest: a3d3940d277cc47b15aaf00b6acf063505000c6859528551e7a83d2735915242
     name: pong
     urls:
     - https://github.com/qadzsi/helmrepo.git/pong-0.2.0.tgz
     version: 0.2.0
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: "2025-01-31T05:57:49.736600118Z"
-    description: A Helm chart for RIFT.ware pong
-    digest: 714f028d39fd50c5904586c393e4c7b19bea2ae05cbd382103161651d226db2b
-    name: pong
-    urls:
-    - https://github.com/qadzsi/helmrepo.git/pong-internal-0.2.0.tgz
-    version: 0.2.0
-generated: "2025-01-31T05:57:49.676623925Z"
+generated: "2025-01-31T07:16:40.399178677Z"
