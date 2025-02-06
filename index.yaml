@@ -9,7 +9,7 @@ entries:
     name: logging-operator
     type: application
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/logging-operator-0.1.6.tgz
+    - https://qadzsi.github.io/helmrepo/charts/logging-operator-0.1.6.tgz
     version: 0.1.6
   nginx:
   - annotations:
@@ -42,7 +42,7 @@ entries:
     - https://github.com/bitnami/containers/tree/main/bitnami/nginx
     - https://www.nginx.org
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/nginx-14.0.0.tgz
+    - https://qadzsi.github.io/helmrepo/charts/nginx-14.0.0.tgz
     version: 14.0.0
   nutss-management-backend-worker:
   - apiVersion: v2
@@ -53,7 +53,7 @@ entries:
     name: nutss-management-backend-worker
     type: application
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/nutss-management-backend-worker-0.43.1-dev-18434972.tgz
+    - https://qadzsi.github.io/helmrepo/charts/nutss-management-backend-worker-0.43.1-dev-18434972.tgz
     version: 0.43.1-dev-18434972
   ping:
   - apiVersion: v2
@@ -63,7 +63,7 @@ entries:
     digest: 453bb829aabd3c30bb4a3e743b349bb78179293a63fa161a058ccf1706110e61
     name: ping
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/ping-0.3.0.tgz
+    - https://qadzsi.github.io/helmrepo/charts/ping-0.3.0.tgz
     version: 0.3.0
   pong:
   - apiVersion: v1
@@ -73,7 +73,7 @@ entries:
     digest: a3d3940d277cc47b15aaf00b6acf063505000c6859528551e7a83d2735915242
     name: pong
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/pong-0.2.0.tgz
+    - https://qadzsi.github.io/helmrepo/charts/pong-0.2.0.tgz
     version: 0.2.0
   ponginternal:
   - apiVersion: v1
@@ -83,6 +83,6 @@ entries:
     digest: 91dadb79d8e443001987ba7088b0e5546f5bf14af8e6823b59e7f8b66135d423
     name: ponginternal
     urls:
-    - https://github.com/qadzsi/helmrepo.git/charts/ponginternal-0.21.0.tgz
+    - https://qadzsi.github.io/helmrepo/charts/ponginternal-0.21.0.tgz
     version: 0.21.0
 generated: "2025-01-31T09:47:46.20975959Z"
