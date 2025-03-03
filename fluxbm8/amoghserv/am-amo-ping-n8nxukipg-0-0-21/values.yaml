@@ -1,0 +1,39 @@
+# Default values for ping
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+global:
+  # Namespace to deploy the service
+  namespace: default
+  # ID of NS used to deploy this chart
+  nsId:
+
+image:
+  # Image path
+  repository: rt.cloud.dzsi.local/docker/rw.ping
+  # Image tag
+  tag: "2004"
+  # Image pull policy
+  pullPolicy: IfNotPresent
+  # Image secrets, if any
+  imagePullSecrets: []
+
+# Name of network-attachment definition associated with macvlan interface
+macvlanNetName: "default-macvlan-net1"
+# Namespace associate with above network-attachment definition associated with macvlan interface
+macvlanNetNamespace: "default"
+# Number of pods for the service
+replicaCount: 1
+
+service:
+  # Service type
+  type: NodePort
+
+metrics:
+  enabled: true
+  annotations:
+    {
+      scrape: true,
+      path: /api/v1/ping/metrics,
+      port: 18888
+    }
