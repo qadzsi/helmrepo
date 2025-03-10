@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  {{ template "mydeployment.fullname" . }}
+  namespace: {{ .Values.global.namespace }}
+  labels:
+    app: {{ template "mydeployment.fullname" . }}
+
+spec:
+  replicas: {{.Values.replicaCount}}
+  selector:
+    matchLabels:
+      app: {{ template "mydeployment.fullname" . }}
+      release: {{ .Release.Name }}
+
+  template:
+    metadata:
+      labels:
+        app: {{ template "mydeployment.fullname" . }}
+        release: {{ .Release.Name }}
+        network-service-id: {{ .Values.global.nsId }}
+        type: ping
+      annotations:
+        dzsi.com/dzsx-network-function-id: dso/Service/cbdso-ref-a/test155:f9c5f198-5696-4385-80bb-de32c0686fbc
+        dzsi.com/dzsx-network-function-href: https://10.157.104.200:443/tmf-api/mano/serviceInventory/v4/test155/service/dso/Service/cbdso-ref-a/test155:f9c5f198-5696-4385-80bb-de32c0686fbc
+        k8s.v1.cni.cncf.io/networks: '[{"name": {{ .Values.macvlanNetName | quote }},
+                                        "namespace": {{ .Values.macvlanNetNamespace | quote }}}]'
+        {{- if .Values.metrics.enabled }}
+        prometheus.io/scrape: {{ .Values.metrics.annotations.scrape | quote }}
+        prometheus.io/path: {{.Values.metrics.annotations.path }}
+        prometheus.io/port: {{.Values.metrics.annotations.port | quote}}
+        {{- end }}
+    spec:
+      affinity:
+        podAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+          - labelSelector:
+              matchExpressions:
+              - key: network-service-id
+                operator: In
+                values:
+                - {{ .Values.global.nsId }}
+              - key: type
+                operator: In
+                values:
+                - pong
+            topologyKey: kubernetes.io/hostname
+      {{- with .Values.image.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml .Values.image.imagePullSecrets | nindent 8 }}
+      {{- end }}
+      containers:
+      - name: {{ template "mydeployment.fullname" . }}
+        image: {{ .Values.image.repository -}} : {{- .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
